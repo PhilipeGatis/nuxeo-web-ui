@@ -463,7 +463,6 @@ Contributors:
           'workflowStarted': '_refreshAndFetchTasks',
           'workflowTaskProcessed': '_refreshAndFetchTasks',
           'taskChanged': '_onTaskChanged',
-          'tasksListSelectionChanged': '_onTasksListSelectionChanged',
           'add-to-clipboard': '_onAddToClipboard',
           'added-to-collection': '_documentAddedToCollection',
           'removed-from-collection': '_documentRemovedFromCollection',
@@ -646,9 +645,6 @@ Contributors:
 
         _onTaskChanged: function(e) {
           this.currentTask = e.detail.task;
-        },
-
-        _onTasksListSelectionChanged: function() {
           this.show('tasks');
         },
 
